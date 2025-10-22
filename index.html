@@ -25,7 +25,7 @@
       margin-bottom: 8px;
     }
 
-    /* Style de la photo de profil */
+    /* Photo de profil */
     .profile {
       display: flex;
       flex-direction: column;
@@ -38,14 +38,18 @@
       height: 200px;
       object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       margin-bottom: 20px;
+      transition: transform 0.2s;
+    }
+    .profile img:hover {
+      transform: scale(1.03);
     }
     .profile-info {
       line-height: 1.4;
     }
 
-    /* Boutons de liens  */
+    /* Boutons liens */
     .links {
       display: flex;
       flex-wrap: wrap;
@@ -55,22 +59,35 @@
     }
     .links a {
       display: inline-block;
-      padding: 6px 14px;
-      border-radius: 20px;
+      padding: 8px 16px;
+      border-radius: 25px;
       background-color: #f0f0f0;
       color: #0077cc;
       font-weight: 500;
-      text-decoration: none;
-      transition: background-color 0.2s, color 0.2s;
+      text-decoration: underline;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: all 0.25s ease;
+      text-align: center;
     }
     .links a:hover {
       background-color: #0077cc;
       color: #fff;
+      text-decoration: underline;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive : boutons sur 2 lignes sur mobile */
+    @media (max-width: 600px) {
+      .links a {
+        flex: 1 1 45%;
+        margin-bottom: 8px;
+      }
     }
 
     a {
-      color: inherit; /* couleur par défaut pour autres liens */
-      text-decoration: none;
+      color: inherit;
+      text-decoration: underline;
     }
     a:hover {
       text-decoration: underline;
@@ -98,10 +115,10 @@
 
   <h2>About me</h2>
   <p>
-    I am a third year PhD student in statistics at ENSAE Paris.
+    I am a third year PhD student in Applied Mathematics at ENSAE Paris.
     My research focuses on robust estimation, high-probability guarantees, statistical learning theory and concentration inequalities.
-    I am supervised by <a href="https://https://crest.science/user/alexandre-tsybakov/">Alexandre Tsybakov</a> and <a href="https://https://jaouadmourtada.github.io"> Jaouad Mourtada</a>.
-    I am also a teaching assistant at ENSAE, ranked among the top 1% of TAs at the school.
+    I am supervised by <a href="https://crest.science/user/alexandre-tsybakov/">Alexandre Tsybakov</a> and <a href="https://jaouadmourtada.github.io">Jaouad Mourtada</a>.
+    I am also a teaching assistant at ENSAE Paris, ranked among the top 1% of TAs at the school.
   </p>
 
   <h2>Publications</h2>
@@ -114,6 +131,7 @@
   <ul>
     <li><b>Teaching Assistant</b>, ENSAE Paris (Oct. 2023 – present)
       <ul>
+        <li></li>
         <li><b>Mathematical Statistics</b>, Fast track, M2 level — 12h/year (2023–2026)</li>
         <li><b>Statistics 1</b>, M1 level — 2×16.5h/year (2023–2026)</li>
         <li><b>Statistics 2</b>, M1 level — 10.5h/year (2023–2026)</li>
