@@ -17,13 +17,6 @@
     h1, h2 {
       font-weight: 500;
     }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
     ul {
       list-style-type: none;
       padding-left: 0;
@@ -32,7 +25,7 @@
       margin-bottom: 8px;
     }
 
-    /* Nouveau style pour la photo de profil */
+    /* Style de la photo de profil */
     .profile {
       display: flex;
       flex-direction: column;
@@ -41,15 +34,46 @@
       text-align: center;
     }
     .profile img {
-      width: 200px;          /* taille ajustable */
+      width: 200px;
       height: 200px;
-      object-fit: cover;     /* recadrage de l'image */
-      border-radius: 50%;    /* image ronde */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ombre subtile */
-      margin-bottom: 20px;   /* espace entre photo et texte */
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
     }
     .profile-info {
       line-height: 1.4;
+    }
+
+    /* Boutons de liens  */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .links a {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background-color: #f0f0f0;
+      color: #0077cc;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    .links a:hover {
+      background-color: #0077cc;
+      color: #fff;
+    }
+
+    a {
+      color: inherit; /* couleur par défaut pour autres liens */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -60,21 +84,24 @@
     <div class="profile-info">
       <h1>Sirine Louati</h1>
       <p>PhD student in Applied Mathematics<br>
-      ENSAE Paris <br>
+      ENSAE Paris<br>
+      Teaching Assistant at ENSAE — Top 1% of TAs<br>
       <a href="mailto:sirine.louati@ensae.fr">sirine.louati@ensae.fr</a></p>
-      <p>
-        <a href="https://scholar.google.com/citations?user=5xCyFVYAAAAJ&hl=fr">Google Scholar</a> ·
-        <a href="https://www.linkedin.com/in/sirine-louati-465932179/">LinkedIn</a> ·
+
+      <div class="links">
+        <a href="https://scholar.google.com/citations?user=5xCyFVYAAAAJ&hl=fr">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/sirine-louati-465932179/">LinkedIn</a>
         <a href="CV Sirine Louati 2025.pdf">CV (PDF)</a>
-      </p>
+      </div>
     </div>
   </div>
 
-  <h2>About</h2>
+  <h2>About me</h2>
   <p>
-    I am a third year PhD student in Applied Mathematics at ENSAE Paris.
+    I am a third year PhD student in statistics at ENSAE Paris.
     My research focuses on robust estimation, high-probability guarantees, statistical learning theory and concentration inequalities.
-    I am supervised by Alexandre Tsybakov and Jaouad Mourtada.
+    I am supervised by <a href="https://https://crest.science/user/alexandre-tsybakov/">Alexandre Tsybakov</a> and <a href="https://https://jaouadmourtada.github.io"> Jaouad Mourtada</a>.
+    I am also a teaching assistant at ENSAE, ranked among the top 1% of TAs at the school.
   </p>
 
   <h2>Publications</h2>
@@ -87,11 +114,11 @@
   <ul>
     <li><b>Teaching Assistant</b>, ENSAE Paris (Oct. 2023 – present)
       <ul>
-        <li>Mathematical Statistics, Fast track, M2 level — 12h/year (2023–2026)</li>
-        <li>Statistics 1, M1 level — 2×16.5h/year (2023–2026)</li>
-        <li>Statistics 2, M1 level — 10.5h/year (2023–2026)</li>
-        <li>Probability Theory, Fast track, M1 level — 9h/year (2024–2026)</li>
-        <li>Nonparametric Estimation, M2 level — 9h/year (2023–2024)</li>
+        <li><b>Mathematical Statistics</b>, Fast track, M2 level — 12h/year (2023–2026)</li>
+        <li><b>Statistics 1</b>, M1 level — 2×16.5h/year (2023–2026)</li>
+        <li><b>Statistics 2</b>, M1 level — 10.5h/year (2023–2026)</li>
+        <li><b>Probability Theory</b>, Fast track, M1 level — 9h/year (2024–2026)</li>
+        <li><b>Nonparametric Estimation</b>, M2 level — 9h/year (2023–2024)</li>
       </ul>
     </li>
   </ul>
