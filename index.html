@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
+  <title>Personal homepage</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 700px;
+      max-width: 850px;
       margin: 60px auto;
       padding: 0 20px;
       line-height: 1.6;
@@ -28,41 +28,83 @@
       list-style-type: none;
       padding-left: 0;
     }
+    li {
+      margin-bottom: 8px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .profile img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 30px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Sirine Louati</h1>
-  <p>PhD student in Statistics<br>
-  ENSAE Paris and Université Paris Dauphine–PSL<br>
-  <a href="mailto:sirine.louati@ensae.fr">sirine.louati@ensae.fr</a></p>
+  <div class="profile">
+    <img src="photo.jpg" alt="Profile photo">
+    <div>
+      <h1>Sirine Louati</h1>
+      <p>PhD student in Statistics<br>
+      ENSAE Paris <br>
+      <a href="mailto:sirine.louati@ensae.fr">sirine.louati@ensae.fr</a></p>
+      <p>
+        <a href="https://scholar.google.com/citations?user=5xCyFVYAAAAJ&hl=fr">Google Scholar</a> ·
+        <a href="https://www.linkedin.com/in/sirine-louati-465932179/">LinkedIn</a> ·
+        <a href="cv.pdf">CV (PDF)</a>
+      </p>
+    </div>
+  </div>
 
   <h2>About</h2>
   <p>
-    I am a PhD student in statistics interested in robust estimation,
-    inference under heteroscedasticity, and applied probability.
-    I previously studied at ENSAE Paris and Université Paris Dauphine.
+    I am a PhD student in statistics at ENSAE Paris.
+    My research focuses on robust estimation, high-probability guarantees,
+    and inference under heteroscedasticity. I am supervised by Alexandre Tsybakov and Jaouad Mourtada.
   </p>
 
-  <h2>Research</h2>
+  <h2>Publications</h2>
   <ul>
-    <li><a href="#">Paper 1: Empirical Median under Heteroscedastic Noise (2024)</a></li>
-    <li><a href="#">Paper 2: Estimation via Chi-squared Divergence (2024)</a></li>
+    <li><b>2025.</b> <i>Estimation of discrete distributions with high probability under χ²-divergence.</i> S. Louati. Submitted, 2025.</li>
+    <li><b>2025.</b> <i>Performance of the empirical median for location estimation in heteroscedastic settings.</i> S. Louati. arXiv preprint, <a href="https://arxiv.org/abs/2501.16956">arXiv:2501.16956</a>.</li>
   </ul>
 
   <h2>Teaching</h2>
   <ul>
-    <li>Teaching assistant in Probability and Statistics (Bachelor level)</li>
-    <li>Teaching assistant in Mathematical Statistics (Master level)</li>
+    <li><b>Teaching Assistant</b>, ENSAE Paris (Oct. 2023 – present)
+      <ul>
+        <li>Mathematical Statistics, Fast track, M2 level — 12h/year (2023–2026)</li>
+        <li>Statistics 1, M1 level — 2×16.5h/year (2023–2026)</li>
+        <li>Statistics 2, M1 level — 10.5h/year (2023–2026)</li>
+        <li>Probability Theory, Fast track, M1 level — 9h/year (2024–2026)</li>
+        <li>Nonparametric Estimation, M2 level — 9h/year (2023–2024)</li>
+      </ul>
+    </li>
   </ul>
 
-  <h2>Contact</h2>
-  <p>
-    <a href="#">Google Scholar</a> ·
-    <a href="#">GitHub</a> ·
-    <a href="#">LinkedIn</a> ·
-    <a href="#">CV (PDF)</a>
-  </p>
+  <h2>Talks</h2>
+  <ul>
+    <li><b>2025.</b> 56èmes Journées de Statistique, Marseille, France.</li>
+    <li><b>2023.</b> Journées de rentrée du Master “Mathématiques et Applications”, IMO, Orsay, France.</li>
+  </ul>
+
+  <h2>Conferences</h2>
+  <ul>
+    <li><b>Apr 2025.</b> Workshop on “Recent Advances in Statistical Robustness”, ESSEC Rabat, Morocco.</li>
+    <li><b>Dec 2024.</b> Meeting in Mathematical Statistics, CIRM, Luminy, France.</li>
+    <li><b>Sep 2024.</b> 11th Heidelberg Laureate Forum, Heidelberg, Germany.</li>
+  </ul>
+
+  <h2>Distinctions and Awards</h2>
+  <ul>
+    <li><b>2023.</b> Maryam Mirzakhani Junior Award — Jacques Hadamard Mathematical Foundation (FMJH).</li>
+    <li><b>2022–2023.</b> Sophie Germain Master Scholarship — Jacques Hadamard Mathematical Foundation (FMJH).</li>
+  </ul>
 
 </body>
 </html>
