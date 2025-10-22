@@ -31,16 +31,25 @@
     li {
       margin-bottom: 8px;
     }
+
+    /* Nouveau style pour la photo de profil */
     .profile {
       display: flex;
+      flex-direction: column;
       align-items: center;
       margin-bottom: 40px;
+      text-align: center;
     }
     .profile img {
-      width: 180px;
-      height: auto;
-      border-radius: 8px;
-      margin-right: 30px;
+      width: 200px;          /* taille ajustable */
+      height: 200px;
+      object-fit: cover;     /* recadrage de l'image */
+      border-radius: 50%;    /* image ronde */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ombre subtile */
+      margin-bottom: 20px;   /* espace entre photo et texte */
+    }
+    .profile-info {
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -48,9 +57,9 @@
 
   <div class="profile">
     <img src="photo.jpg" alt="Profile photo">
-    <div>
+    <div class="profile-info">
       <h1>Sirine Louati</h1>
-      <p>PhD student in Statistics<br>
+      <p>PhD student in Applied Mathematics<br>
       ENSAE Paris <br>
       <a href="mailto:sirine.louati@ensae.fr">sirine.louati@ensae.fr</a></p>
       <p>
@@ -63,9 +72,9 @@
 
   <h2>About</h2>
   <p>
-    I am a third year PhD student in statistics at ENSAE Paris.
-    My research focuses on robust estimation, high-probability guarantees,
-    and inference under heteroscedasticity. I am supervised by Alexandre Tsybakov and Jaouad Mourtada.
+    I am a third year PhD student in Applied Mathematics at ENSAE Paris.
+    My research focuses on robust estimation, high-probability guarantees, statistical learning theory and concentration inequalities.
+    I am supervised by Alexandre Tsybakov and Jaouad Mourtada.
   </p>
 
   <h2>Publications</h2>
